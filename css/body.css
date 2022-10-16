@@ -1,0 +1,7 @@
+.body{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    background-color:rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+  }
