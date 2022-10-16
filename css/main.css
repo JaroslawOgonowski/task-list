@@ -1,0 +1,29 @@
+.main__subtitle {
+    min-width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 0px;
+}
+.main__subtitle--padding {
+padding: 30px 10px
+}
+.main__div{
+    max-width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 0px;
+}
+.main__div--minHeight{
+    min-height: 120px;
+}
+
+.main__list{
+    min-width: 100%;
+    min-height: 100px;
+    margin-top: 0px;
+    background-color: white;
+}

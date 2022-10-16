@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    
     <script defer src="js/script.js"></script>
     <title>Lista zadań</title>
 </head>
@@ -23,20 +26,20 @@
     </header>
     <main class="main">
         <h2 class="main__subtitle">Dodaj nowe zadanie </h2>
-        <div></div>
-        <form class="form">
-            <fieldset>
-                <p><input placeholder="Co jest do zrobienia?"><button>Dodaj zadanie</button>
-            </fieldset>
+        <div class="main__div">
+        <form >
+            <fieldset class="form__fieldset">
+                <p><input class="form__input" placeholder="Co jest do zrobienia?"><button class="form__button js-addNewTaskButton">Dodaj zadanie</button>
+            </fieldset></form></div>
             </p>
-            <h2>Lista zadań</h2>
-            <div class="main__list">
+            <h2 class="main__subtitle main__subtitle--padding">Lista zadań</h2>
+            <div class="main__div main__div--minHeight">
                 <ul class="js-newTask">
                 </ul>
             </div>
-        </form>
+        
     </main>
-    <footer></footer>
+    <footer class="footer">Project: YouCode, execution: Jarosław Ogonowski 2022</footer>
 
 </body>
 

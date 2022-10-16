@@ -1,0 +1,19 @@
+.form__fieldset{
+    border: none;
+}
+
+.form__button{
+    border: none;
+    margin-left: 10px;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+}
+.form__input{
+    display: inline-block;
+    min-width:80%;
+    padding: 9px;
+    border-color: lightgray;
+    border-style: solid;
+
+}
