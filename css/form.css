@@ -1,5 +1,8 @@
-.form__fieldset{
-    border: none;
+.form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    
 }
 
 .form__button{
@@ -8,12 +11,15 @@
     background-color: teal;
     color: white;
     padding: 10px;
+    margin-right: 20px;
+    
 }
 .form__input{
     display: inline-block;
-    min-width:80%;
+    min-width: 80%;
     padding: 9px;
     border-color: lightgray;
     border-style: solid;
+    
 
 }

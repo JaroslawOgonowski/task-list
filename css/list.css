@@ -4,7 +4,7 @@
 }
 .list__itemContainer{
     display: grid;
-    grid-template-columns: 5% 90% 5%;      
+    grid-template-columns: 1fr 10fr 1fr;      
     padding: 15px;
     border-bottom: 1px solid lightgray;
 }

@@ -28,6 +28,12 @@
         render();
 
     };
+    const focusOnSubmit = () => {
+        const newTask = document.querySelector(".js-newTask")
+        newTask.value = "";
+        newTask.focus();
+        render();
+    }
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -68,6 +74,7 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
+        
     };
 
 
@@ -82,6 +89,7 @@
             return; //jeśli okno jest puste to nic nie robimy
         }
         addNewTask(newTaskContent);
+        focusOnSubmit();
         //a jeśli nie jest pusty to chcemy dodać nowe zadanie (czyli nowy obiekt do tablicy):
         //znów wywołujemy funkcję render i to jest w funkcji newTasContent
     };
