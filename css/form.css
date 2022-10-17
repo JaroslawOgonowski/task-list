@@ -1,25 +1,41 @@
-.form{
+.form {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
-    
+
 }
 
-.form__button{
+.form__button {
     border: none;
     margin-left: 10px;
     background-color: teal;
     color: white;
     padding: 10px;
     margin-right: 20px;
-    
+
 }
-.form__input{
+
+.form__input {
     display: inline-block;
     min-width: 80%;
     padding: 9px;
     border-color: lightgray;
     border-style: solid;
-    
+}
 
+@media (orientation: portrait) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__button {
+        min-width: 100%;
+        margin: 0;
+
+    }
+
+    .form__input {
+        min-width: 100%;
+    }
 }
