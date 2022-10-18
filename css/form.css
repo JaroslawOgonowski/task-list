@@ -30,11 +30,12 @@
     }
 
     .form__button {
-        max-width: 100%;
+        width: 100%;
         margin: auto;
 
     }
     .form__input {
+        width: 100%;
         margin: auto;
     }
 
