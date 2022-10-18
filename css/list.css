@@ -1,17 +1,18 @@
 .list {
-    padding: 15px;
     list-style: none;
+    padding-left: 0px;
 }
 
 .list__itemContainer {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: auto 1fr auto;
     padding: 15px;
     border-bottom: 1px solid lightgray;
     align-items: center;
 }
 
 .list__item {
+    word-break: break-word;
     margin: 20px;
     display: flex;
     align-items: center;
