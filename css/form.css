@@ -17,7 +17,7 @@
 
 .form__input {
     display: inline-block;
-    min-width: 80%;
+    max-width: 100%;
     padding: 9px;
     border-color: lightgray;
     border-style: solid;
