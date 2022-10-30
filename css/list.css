@@ -29,6 +29,7 @@
     color: white;
     width: 30px;
     height: 30px;
+    transition: 1s;
 }
 
 .list__button:active {
