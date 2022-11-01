@@ -12,6 +12,9 @@
     margin-bottom: 0px;
 }
 
+.main__subtitle--lower{
+    font-size: 20px;
+}
 .main__div {
     max-width: 100%;
     margin-top: 0px;
@@ -23,4 +26,27 @@
 
 .main__div--minHeight {
     min-height: 120px;
+}
+.main__button{
+    background-color: white;
+    color: hsl(180, 100%, 25%);
+    text-align: center;
+    border: none;
+    max-height: 40px;
+
+}
+
+.main__button:hover{
+    color: hsl(180, 100%, 35%);
+}
+.main__button:active{
+    color: hsl(180, 100%, 45%);
+    border: 2px solid black;
+    margin: -2px;
+}
+.main__subtitle--grid{
+    display: grid;
+    grid-template-columns:  1fr auto auto;
+    grid-gap: 20px;
+    align-items: center;      
 }

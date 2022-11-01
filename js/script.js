@@ -1,21 +1,30 @@
 {
-    const tasks = [];
+    let tasks = [];
+    let hideDoneTask = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
         render();
     };
 
     const removeTask = (index) => {
-        tasks.splice(index, 1);
+        tasks = [
+            ...tasks.slice(0, index),
+            ...tasks.slice(index + 1),
+        ];
         render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            { ...tasks[taskIndex], done: !tasks[taskIndex].done, },
+            ...tasks.slice(taskIndex + 1),
+        ];
+
         render();
 
     };
@@ -44,7 +53,23 @@
         });
     };
 
-    const render = () => {
+
+    const renderButtons = (htmlString) => {
+        let subtitleString = "";
+        if (htmlString != "") {
+            subtitleString +=
+                `<h2 class=" main__subtitle--lower js-subtitle">Lista zadań</h2>
+                 <button class="main__button">Ukryj zakończone</button><button class="main__button">Ukończ wszystkie</button>` }
+
+        else if (htmlString === "") {
+            subtitleString +=
+                `<h2 class=" main__subtitle--lower js-subtitle">Lista zadań</h2>`
+        };
+
+        document.querySelector(".js-subtitle").innerHTML = subtitleString;
+    };
+
+    const renderTask = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -60,7 +85,21 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
+
+
+        renderButtons(htmlString);
+    };
+
+
+
+    const bindButtonEvents = () => {/**if */ };
+
+    const render = () => {
+        renderTask();
+
+
         bindEvents();
+        bindButtonEvents();
 
     };
 
