@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.list__itemContainer--hidden {
+    display: none;
+}
+
 .list__item {
     word-break: break-word;
     margin: 20px;
@@ -48,6 +52,7 @@
 .list__button--red:hover {
     background-color: red;
 }
+
 .list__button--red:active {
     background-color: rgb(245, 40, 40);
 }
